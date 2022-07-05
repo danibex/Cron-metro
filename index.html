@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgba(128, 128, 128, 0.377);
+            align-items: center;
+            text-align: center;
+        }
+        #container {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+        #central {
+            background-color: black;
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            margin-top: 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.596);
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        #tempo {
+            color: aqua;
+            text-align: center;
+            font-size: 90px;
+        }
+        button {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+<button onclick="pausarElimpar()">PARAR</button>
+    <div id="container">
+        <div id="central">
+            <span id="tempo" onclick="comecar()"><span id="hora">99</span> <span id="minuto">99</span> <span id="segundo">99</span></span>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
